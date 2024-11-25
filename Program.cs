@@ -4,30 +4,62 @@ class Program
     static void Main(string[] args)
     {
         BankAccount account = new BankAccount();
+        bool running = true;
 
-        //step 1: Check initial balance 
-        Console.WriteLine($"Welcome. {account.CheckBalance()}");
+        while (running)
+        {
+            //Main Menu
+            Console.Clear();
+            Console.WriteLine("Welcome to Simple Banking!");
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1. Deposit");
+            Console.WriteLine("2. Withdraw");
+            Console.WriteLine("3. Check Balance");
+            Console.WriteLine("4. Show Transaction History");
+            Console.WriteLine("5. Exit");
+            Console.Write("Select an option (1-5): ");
 
-        //step 2: Deposit money 
-        Console.WriteLine("Enter deposit amount: ");
-        decimal depositAmount = Convert.ToDecimal(Console.ReadLine());
-        account.Deposit(depositAmount);
-        Console.WriteLine("Enter deposit another amount: ");
-        decimal newDepositAmount = Convert.ToDecimal(Console.ReadLine());
-        account.Deposit(newDepositAmount);
+            //Get user input
+            var input = Console.ReadLine();
 
-        //step 3: Withdraw money
-        Console.WriteLine("Enter withdraw amount: ");
-        decimal withdrawAmount = Convert.ToDecimal(Console.ReadLine());
-        account.Withdraw(withdrawAmount);
+            switch (input)
+            {
+                case "1":
+                    Console.WriteLine("Enter deposit amount: ");
+                    decimal depositAmount = Convert.ToDecimal(Console.ReadLine());
+                    account.Deposit(depositAmount);
+                    break;
 
-        //step 4: Check balance
-        Console.WriteLine(account.CheckBalance());
+                case "2":
+                    Console.WriteLine("Enter amount to withdraw: ");
+                    decimal withdrawAmount = Convert.ToDecimal(Console.ReadLine());
+                    account.Withdraw(withdrawAmount);
+                    break;
 
-        //step 5: Show transaction history
-        Console.WriteLine("Show transaction histroy? y/n");
-        var response = Console.ReadLine();
-        account.ShowTransactionHistory(response);
+                case "3":
+                    Console.WriteLine(account.CheckBalance());
+                    break;
+
+                case "4":
+                    account.ShowTransactionHistory();
+                    break;
+
+                case "5":
+                    Console.WriteLine("Thank you for using Simple Banking! Goodbye!");
+                    running = false;  
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid option, please choose a number between 1 and 5.");
+                    break;
+            }
+
+            if(running)
+            {
+                Console.WriteLine("\nPress any key to continue..");
+                Console.ReadKey();
+            }
+        }
 
     }
 }

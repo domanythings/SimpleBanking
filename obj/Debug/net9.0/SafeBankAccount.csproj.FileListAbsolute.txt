@@ -12,3 +12,4 @@ C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\refint\SafeBankAccount.d
 C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.pdb
 C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.genruntimeconfig.cache
 C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\ref\SafeBankAccount.dll
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.sourcelink.json

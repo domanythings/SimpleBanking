@@ -50,18 +50,15 @@ public class BankAccount
     }
 
 //Method to show transaction history
-    public void ShowTransactionHistory(string response)
+    public void ShowTransactionHistory()
     {
         if(transactionHistory.Count == 0)
         {
             Console.WriteLine("No transactions yet");
         }
-        else if(response == "n")
-        {
-            return;
-        }
         else
         {
+            Console.WriteLine("\nTransaction History: ");
             foreach (var transaction in transactionHistory)
             {
                 Console.WriteLine(transaction);
