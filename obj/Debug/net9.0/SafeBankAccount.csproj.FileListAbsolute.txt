@@ -1,0 +1,14 @@
+C:\Users\user\PROJECTS\SafeBankAccount\bin\Debug\net9.0\SafeBankAccount.exe
+C:\Users\user\PROJECTS\SafeBankAccount\bin\Debug\net9.0\SafeBankAccount.deps.json
+C:\Users\user\PROJECTS\SafeBankAccount\bin\Debug\net9.0\SafeBankAccount.runtimeconfig.json
+C:\Users\user\PROJECTS\SafeBankAccount\bin\Debug\net9.0\SafeBankAccount.dll
+C:\Users\user\PROJECTS\SafeBankAccount\bin\Debug\net9.0\SafeBankAccount.pdb
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.AssemblyInfoInputs.cache
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.AssemblyInfo.cs
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.csproj.CoreCompileInputs.cache
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.dll
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\refint\SafeBankAccount.dll
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.pdb
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\SafeBankAccount.genruntimeconfig.cache
+C:\Users\user\PROJECTS\SafeBankAccount\obj\Debug\net9.0\ref\SafeBankAccount.dll
