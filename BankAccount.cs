@@ -14,32 +14,40 @@ public class BankAccount
     {
         if(amount <= 0 )
         {
-            Console.WriteLine("Deposit amount must be greater than zero!"); //TODO
+            Console.WriteLine("Deposit amount must be greater than zero!"); 
         }
-        else
+        else if(amount > 0)
         {
             balance += amount;
             Console.WriteLine($"Deposited: {amount:C}. Available Balance: {balance:C}");
             transactionHistory.Add($"Deposited {amount:C} on {DateTime.Now}");
         }
+        else
+        {
+            Console.WriteLine("Please enter a number!");
+        }
     }
 
-// Method do withdraw money from the bank
+// Method to withdraw money from the account
     public void Withdraw(decimal amount)
     {
         if(amount <= 0)
         {
-            Console.WriteLine("Withdrawal must be greater than zero!");  //TODO
+            Console.WriteLine("Withdrawal amount must be greater than zero!");  
         }
         else if(amount > balance)
         {
             Console.WriteLine("Insufficient funds");
         }
-        else 
+        else if(amount > 0)
         {
             balance -= amount;
             Console.WriteLine($"Withdraw {amount:C} Successful. Available Balance: {balance:C}");
             transactionHistory.Add($"Withdrew {amount:C} on {DateTime.Now}");
+        }
+        else 
+        {
+            Console.WriteLine("Please enter a valid number!");
         }
     }
 

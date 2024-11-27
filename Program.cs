@@ -26,14 +26,28 @@ class Program
             {
                 case "1":
                     Console.WriteLine("Enter deposit amount: ");
-                    decimal depositAmount = Convert.ToDecimal(Console.ReadLine());
-                    account.Deposit(depositAmount);
+                    var response = Console.ReadLine();
+                    if (decimal.TryParse(response, out decimal depositAmount))
+                    {
+                        account.Deposit(depositAmount);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Please enter a number!");
+                    }
                     break;
 
                 case "2":
                     Console.WriteLine("Enter amount to withdraw: ");
-                    decimal withdrawAmount = Convert.ToDecimal(Console.ReadLine());
-                    account.Withdraw(withdrawAmount);
+                    var userInput = Console.ReadLine();
+                    if (decimal.TryParse(userInput, out decimal withdrawAmount))
+                    {
+                        account.Withdraw(withdrawAmount);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid response. Please enter a valid number!");
+                    }
                     break;
 
                 case "3":
@@ -46,7 +60,7 @@ class Program
 
                 case "5":
                     Console.WriteLine("Thank you for using Simple Banking! Goodbye!");
-                    running = false;  
+                    running = false;
                     break;
 
                 default:
@@ -54,9 +68,9 @@ class Program
                     break;
             }
 
-            if(running)
+            if (running)
             {
-                Console.WriteLine("\nPress any key to continue..");
+                Console.WriteLine("\nPress any key to continue...");
                 Console.ReadKey();
             }
         }
